@@ -14,9 +14,21 @@ Das Regelwerk sieht vor, dass wenn ein Künstler im Objekt-Dokument erfasst wird
 beforzugte und gegebenfalls alternative Namenansetzung, Geburtsdaten und Geburtsort, sowie der Urheberechtsvermerk. Letzterer steuert unter Anderen im Online-Portal Bildindex, ob die Objekte zum Künstler im Internet gezeigt werden dürfen, oder nicht. Bislang gibt 
 es kein (semi-)maschinelles Verfahren, das das Urheberrechtsmanagement steuert. 
 
+### Redaktionelle Vorteile durch ein semi-maschinelles Verfahren
+Derzeit gibt es rund 98330 Künstlerdokumente in der HIDA-Datenbank. Die Prüfung des VG-Bild-Kunst Eintrages 
+erfolgt bislang lediglich manuell bei der Erstellung neuer Künstlerdokumente. Eine komplett intelektuelle Prüfung ist bei der 
+Datenmenge nicht zumutbar. Da das Rechtemanagement essentiell für die Online-Publikation der bebilderten Objekte 
+ist, sollte ein semi-maschinelles Verfahren einen großteil des Bestandes ohne viel Arbeitszeit zu verbrauchen die 
+redaktionelle Arbeit unterstützen. Zudem wird das bisherige Erfassungssystem HIDA4 demnächst auf APS migrieren. Dazu werden nach und nach alle Dokumentstypen geprüft. Bislang wurde nur ein Doublettenabgleich 
+bei den Künstlerdokumenten vorgenommen, eine Einschätzung weiterer Fehlerpotentiale ist demnach notwendig. 
+ 
 ## 2. Erstelle eine Plausibilitätsprüfung, die im Objekt-Dokument prüft, ob ein Objekt, das Sammlungsgegenstand ist, oder war einen Künster- oder Werkstatteintrag hat. 
 Das Regelwerk sieht vor, dass innerhalb eines Objektdatensatzes, sofern es sich um einen aktuellen oder ehemaligen Sammlungsgegenstand handelt, immer ein Künstler- oder ein Werkstatteintrag vorhanden sein muss. Ist dieser nicht vorhanden, so muss zumindest eine 
 Datierung und ein Eintrag im Feld 5130 (stilistisch-geografische Herkunft) im Datensatz vorliegen.
+
+### Redaktioneller Vorteil
+Die Generierung einer Liste von unvollständigen oder fehlerhaften Objekt-Dateien mit den geschilderten Anforderungen, kann die bisherige Erfassungsumgebung nicht selber leisten. Um die Redaktion in ihrer Arbeit zu unterstützen, würde ein maschinelles Verfahren 
+zur Erstellung einer solchen Liste viel Zeit ersparen. Das Ergänzen der fehlenden Einträge kann jedoch nur manuell erfolgen. 
   
 # Vorgehensweisen
 ## zu 1.:
