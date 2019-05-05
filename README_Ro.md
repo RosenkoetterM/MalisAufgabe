@@ -23,7 +23,7 @@ Datierung und ein Eintrag im Feld 5130 (stilistisch-geografische Herkunft) im Da
 4. Erstelle automatisch bei einem exacten Match einen "VG-Bild-Kunst vertreten" Eintrag in das entsprechende Feld.
 5. Generiere eine Liste aller übrig gebliebenen Künstler für ein manuelles Matching.
 
-### Frage:
+### Diskussion:
 Ich werde nicht drum herum kommen Teile dieser Vorgehensweise händisch zu machen. Der Export aus HIDA, der Download aus VG-Bild-Kunst, oder gibt es da noch andere Möglichkeiten?
 
 
