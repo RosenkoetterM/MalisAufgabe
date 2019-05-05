@@ -7,7 +7,7 @@ Die Erfassung folgt nach dem Regelwerk: MIDAS (Marburger Index).
 
 # Ideen
 
-Zwei Ideen stehen zur Auswahl, wobei Idee 1 mein Favorit ist
+Zwei Ideen stehen zur Auswahl, wobei Idee 1 mein Favorit ist. 
 
 ## 1. VG Bild-Kunst Vertretung Matching
 Das Regelwerk sieht vor, dass wenn ein Künstler im Objekt-Dokument erfasst wird, dieser auch im Künstlerdokument (Seitendokument) angelegt sein muss. In diesem müssen folgende Felder ausgefüllt sein: 
@@ -26,14 +26,13 @@ Datierung und ein Eintrag im Feld 5130 (stilistisch-geografische Herkunft) im Da
 4. Erstelle automatisch bei einem exacten Match einen "VG-Bild-Kunst vertreten" Eintrag in das entsprechende Feld.
 5. Generiere eine Liste aller übrig gebliebenen Künstler für ein manuelles Matching.
 
-### Diskussion:
-Ich werde nicht drum herum kommen Teile dieser Vorgehensweise händisch zu machen. Der Export aus HIDA, der Download aus VG-Bild-Kunst, oder gibt es da noch andere Möglichkeiten?
-
-
 ## zu 2.:
 1. Filter in HiDA4 alle Objektdokumente, die Sammlungsdokumente sind oder waren (Feld: ob28 besetzt).
 2. Exportiere die Datei im XML-Format.
 3. Schreibe ein Skript, dass alle Objekte herausfilter, die keinen Künstler- oder Werkstatteintrag haben (ob30/3100 unbesetzt) und denen ein Eintrag im Datierungsfeld (5060), sowie in Feld 5130 (stilistisch-geografische Herkunft) fehlt.
 4. Erstelle eine Liste aller Objekte auf die Nr.3 zutrifft.
 
+## Diskussion:
+zu 1.: Ich werde nicht drum herum kommen Teile dieser Vorgehensweise händisch zu machen. Der Export aus HIDA, der Download aus VG-Bild-Kunst, oder gibt es da noch andere Möglichkeiten?
 
+allgemein: Welches der beiden Varianten findest du besser @pdinger?
