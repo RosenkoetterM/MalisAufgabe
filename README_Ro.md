@@ -48,3 +48,5 @@ zur Erstellung einer solchen Liste viel Zeit ersparen. Das Ergänzen der fehlend
 zu 1.: Ich werde nicht drum herum kommen Teile dieser Vorgehensweise händisch zu machen. Der Export aus HIDA, der Download aus VG-Bild-Kunst, oder gibt es da noch andere Möglichkeiten?
 
 allgemein: Welches der beiden Varianten findest du besser @pdinger?
+
+Ich würde die zweite Variante nehmen!
