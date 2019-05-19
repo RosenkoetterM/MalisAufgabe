@@ -26,15 +26,15 @@ Das hier zu entwickelnde "Künstlerdokumenttool" soll zwei der wichtigsten Eigen
 4. Erstelle eine Liste mit allen Künstlerdateien, die noch keine Anbindung an mindestens eine Normdatei haben.
 5. Matche alle Künstlerdaten, die noch keine Normdatei haben mit den Personendatensätzen der GND
 5a. pattern Match mit: 
-| Bezeichnung | HiDA4 Feldnummer | Beispiel | Kommentar |
-| ----------- | ---------------- | -------- | --------- |
-| KUE-Dok.-Nr. | 3000 | 02553162 | Interne Dokumentnummer, die nicht doppelt vorkommen darf. |
-| Künstlername | 3100 | Raffael | Normierter Ansetzung nach: Nachname, Vorname|
-| Zweitname | 3105 | Santi, Raffaello & Sanzio, Raffaello & Sanzio, Raffaele & Raffaello Santi & Raphael Urbinas & Raphaello | Normierte Ansetzung nach: Nachname, Vornahme; Aufzählzeichen: & |
-| Geburtsdatum | 3270 | 1483.03.26/1483.03.28 | Standard ISO Norm (yyyy-mm-dd) wird nicht eingehalten. Alternatives Datum: */* (semantisches *oder* in Midas).
-| Sterbedatum | 3330 | 1520.04.06 | siehe Geburtsdatum |
-| Geburtsort | 3290 | Urbino? | Sollen Fragezeichen generell hier ignoriert werden? |
-| Norm-ID-NR. | 30gn | gnd118597787 | Die eigentliche GND-Nummer wird nicht als URI abgelegt, sonder als reine ID mit dem Präfix der jeweiligen Normdatei. |
+ | Bezeichnung | HiDA4 Feldnummer | Beispiel | Kommentar |
+ | --- | --- | ---| --- |
+ | KUE-Dok.-Nr. | 3000 | 02553162 | Interne Dokumentnummer, die nicht doppelt vorkommen darf. |
+ | Künstlername | 3100 | Raffael | Normierter Ansetzung nach: Nachname, Vorname|
+ | Zweitname | 3105 | Santi, Raffaello & Sanzio, Raffaello & Sanzio, Raffaele & Raffaello Santi & Raphael Urbinas & Raphaello | Normierte Ansetzung nach: Nachname, Vornahme; Aufzählzeichen: & |
+ | Geburtsdatum | 3270 | 1483.03.26/1483.03.28 | Standard ISO Norm (yyyy-mm-dd) wird nicht eingehalten. Alternatives Datum: */* (semantisches *oder* in Midas).
+ | Sterbedatum | 3330 | 1520.04.06 | siehe Geburtsdatum |
+ | Geburtsort | 3290 | Urbino? | Sollen Fragezeichen generell hier ignoriert werden? |
+ | Norm-ID-NR. | 30gn | gnd118597787 | Die eigentliche GND-Nummer wird nicht als URI abgelegt, sonder als reine ID mit dem Präfix der jeweiligen Normdatei. |
 
 ## 2. VG Bild-Kunst Vertretung
 2. Ermittel alle Künstlerdokumente ohne VG-Bild-Kunst Eintrag ermittelt.
