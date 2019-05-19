@@ -25,7 +25,8 @@ Das hier zu entwickelnde "Künstlerdokumenttool" soll zwei der wichtigsten Eigen
 3.a. Generierte Liste im Exel-Format an Redaktion per Mail.
 4. Erstelle eine Liste mit allen Künstlerdateien, die noch keine Anbindung an mindestens eine Normdatei haben.
 5. Matche alle Künstlerdaten, die noch keine Normdatei haben mit den Personendatensätzen der GND
-5a. pattern Match mit: 
+5a. pattern Match mit
+
  | Bezeichnung | HiDA4 Feldnummer | Beispiel | Kommentar |
  | --- | --- | ---| --- |
  | KUE-Dok.-Nr. | 3000 | 02553162 | Interne Dokumentnummer, die nicht doppelt vorkommen darf. |
