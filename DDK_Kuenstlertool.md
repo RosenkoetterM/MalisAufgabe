@@ -1,6 +1,6 @@
 # Die Arbeitsumgebung
 
-Das Deutsche Dokumentationszentrum für Kunstgeschichte Bildarchiv Foto Marburg (DDK) erfasst Kunst- und Architektur-Objekte für die Online-Publikation www.bildindex.de. Das dabei verwendete Erfassungssystem HiDA4 ist eine hierarchische SQL-Datenbank, mit der man 
+Das Deutsche Dokumentationszentrum für Kunstgeschichte Bildarchiv Foto Marburg (DDK) erfasst Kunst- und Architektur-Objekte für die Online-Publikation www.bildindex.de. Das dabei verwendete Erfassungssystem HiDA4 ist eine  SQL-Datenbank, mit der man 
 unterschiedliche Dokumenttypen erfassen kann. Kunst- und Architektur-Objekte werden in der Objekt-Dokumenttyp, das auch Hauptdokumenttyp ist, erfasst. Daran angeknüpft sind Seitendokumente, die für das kontrollierte Vokabular in Form einer Thesaurusdatei, 
 oder weitere Entitäten wie Georeferenzierungen, Künstler oder Werkstätten sorgen.
 Die Erfassung folgt nach dem Regelwerk: MIDAS (Marburger Index). Das Regelwerk sieht vor, dass wenn ein Künstler im Objekt-Dokument erfasst wird, dieser auch im Künstlerdokument (Seitendokument) angelegt sein muss. In diesem müssen folgende Felder ausgefüllt sein: 
@@ -39,8 +39,9 @@ Das hier zu entwickelnde "Künstlerdokumenttool" soll zwei der wichtigsten Eigen
  
 
 ## 2. VG Bild-Kunst Vertretung
-2. Ermittel alle Künstlerdokumente ohne VG-Bild-Kunst Eintrag ermittelt.
+2. Ermittel alle Künstlerdokumente ohne VG-Bild-Kunst Eintrag.
 3. Erstelle ein namens(varianten-) basiertes Matching mittels der entsprechenden CSV-Datei zu Künstlern mit Onlinerechten über www.bildkunst.de/service/kuenstlersuche/online.html
+3a. unter Ausschlusskriterium: gemeinfreie Künstler (Sterbedatum <x)
 4. Erstelle automatisch bei einem exacten Match einen "VG-Bild-Kunst vertreten" Eintrag in das entsprechende Feld.
 5. Generiere eine Liste aller übrig gebliebenen Künstler für ein manuelles Matching.
 
