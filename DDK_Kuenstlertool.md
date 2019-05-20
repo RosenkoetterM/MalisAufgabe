@@ -46,10 +46,13 @@ Das hier zu entwickelnde "Künstlerdokumenttool" soll zwei der wichtigsten Eigen
 5. Generiere eine Liste aller übrig gebliebenen Künstler für ein manuelles Matching.
 
 ## Offene Fragen
-zu 1.1.: Wäre es ratsam mit einer kleineren Testmenge an Künstlerdaten zu arbeiten?
-zu 1.2.: Ist es evtl. sinnvoller sich nunächst nur auf GND zu fokussieren?
-zu 1.3.a.: Kann es hier zu Problemen mit ASCII kommen? Zeichenumsetzung von HiDA4 ist hierbei problematisch. Auf was muss ich achten? Siehe dazu Tabelle 1.5.a. Kommentar zu Zweitname und Geburtsdatum.
-zu 1.5.: Bislang gibt es noch keine Schnittstelle zum Abrufen oder Bereitstellen der Daten. Wie hole ich mir die csv-Dateien aktuell herunter?
-zu 1.5.a.: Wenn weder Geburts- noch Sterbedatum vorhanden sind sollte die erste (3300) und letzte Erwähnung (3360) abgefragt werden?
-
+* zu 1.1.: Wäre es ratsam mit einer kleineren Testmenge an Künstlerdaten zu arbeiten?
+> Ja. siehe 2.3.a
+* zu 1.2.: Ist es evtl. sinnvoller sich nunächst nur auf GND zu fokussieren?
+* zu 1.3.a.: Kann es hier zu Problemen mit ASCII kommen? Zeichenumsetzung von HiDA4 ist hierbei problematisch. Auf was muss ich achten? Siehe dazu Tabelle 1.5.a. Kommentar zu Zweitname und Geburtsdatum.
+> Es gibt eine Matching-Tabelle (HiDa nach UTF-8)
+* zu 1.5.: Bislang gibt es noch keine Schnittstelle zum Abrufen oder Bereitstellen der Daten. Wie hole ich mir die csv-Dateien aktuell herunter?
+> Es liegen Textdaten vor: Hida: XML-Dump, VG Bild: CSV. Vorschlag zum Vorgehen: HiDA in BaseX und VG Bild in SQL-DB bringen und über eine API abfragen.
+* zu 1.5.a.: Wenn weder Geburts- noch Sterbedatum vorhanden sind sollte die erste (3300) und letzte Erwähnung (3360) abgefragt werden?
+> Wird im besten Falle nicht notwendig sein.
 
