@@ -40,7 +40,7 @@ Das hier zu entwickelnde "Künstlerdokumenttool" soll zwei der wichtigsten Eigen
 
 ## 2. VG Bild-Kunst Vertretung
 2. Ermittel alle Künstlerdokumente ohne VG-Bild-Kunst Eintrag.
-3. Erstelle ein namens(varianten-) basiertes Matching mittels der entsprechenden CSV-Datei zu Künstlern mit Onlinerechten über www.bildkunst.de/service/kuenstlersuche/online.html
+3. Erstelle ein namens(varianten-) basiertes Matching mittels der entsprechenden CSV-Datei zu Künstlern mit Onlinerechten über http://www.bildkunst.de/service/kuenstlersuche/onlinerechte.html
 3a. unter Ausschlusskriterium: gemeinfreie Künstler (Sterbedatum <x)
 4. Erstelle automatisch bei einem exacten Match einen "VG-Bild-Kunst vertreten" Eintrag in das entsprechende Feld.
 5. Generiere eine Liste aller übrig gebliebenen Künstler für ein manuelles Matching.
