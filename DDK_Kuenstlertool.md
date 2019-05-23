@@ -6,7 +6,7 @@ oder weitere Entitäten wie Georeferenzierungen, Künstler oder Werkstätten sor
 Die Erfassung folgt nach dem Regelwerk: MIDAS (Marburger Index). Das Regelwerk sieht vor, dass wenn ein Künstler im Objekt-Dokument erfasst wird, dieser auch im Künstlerdokument (Seitendokument) angelegt sein muss. In diesem müssen folgende Felder ausgefüllt sein: 
 beforzugte und gegebenfalls alternative Namenansetzung, Geburtsdaten und Geburtsort, sowie der Urheberechtsvermerk
 und falls vorhanden die Personennormdatei der GND. Der VG Bild-Kunst Eintrag ist essentiell für das Rechtemanagement,
-denn es regelt unter anderem die Bildrechte für die Online-Publikation www.bildindex.de. Der GND-Eintrag ist mittlerweile obligatorisch und Grundlage von Linked Open Data als Teil der digitalen Strategie im Haus.
+denn es regelt unter anderem die Bildrechte für die Online-Publikation www.bildindex.de. Der GND-Eintrag ist mittlerweile soweit vorhanden obligatorisch und Grundlage von Linked Open Data als Teil der digitalen Strategie im Haus.
 
 Im Zuge der Migration von der bisherigen Arbeitsumgebung HiDA4 auf APS, werden alle Dokumenttypen auf ihre Vollständigkeit und Plausibilität geprüft. 
 
@@ -19,13 +19,14 @@ Das hier zu entwickelnde "Künstlerdokumenttool" soll zwei der wichtigsten Eigen
 
 # Künstlerdokumenttool - Ein erster Workflow-Entwurf
 ## 1. Personenabgleich:
-1. Erstelle einen Export aller Künstlerdokumente (KUE-Datei) aus der Erfassungsumgebung der HIDA4 Datenbank in XML.
+1. Erstelle einen Export aller Künstlerdokumente (KUE-Datei) aus der Erfassungsumgebung der HIDA4 Datenbank in XML. http://versand.fotomarburg.de/KUE20190523.zip
+1.a. Zeichensatz UTF-8 aber Codes für Sonderzeichen (^B) müssen umgewandelt werden mit midasCorereplacementMap.xslt
 2. Suche alle Künstler-Dokumente ab mit Mehrfachvergabe von ULAN, GND, VIAF.
 3. Erstelle eine Liste mit allen doppelt vergebenen IDs zur Bereinigung an die Redaktion
 3.a. Generierte Liste im Exel-Format an Redaktion per Mail.
 4. Erstelle eine Liste mit allen Künstlerdateien, die noch keine Anbindung an mindestens eine Normdatei haben.
-5. Matche alle Künstlerdaten, die noch keine Normdatei haben mit den Personendatensätzen der GND
-5a. pattern Match mit
+5. Matche alle Künstlerdaten, die noch keine Normdatei haben mit den Personendatensätzen der GND https://data.dnb.de/opendata/
+5a. pattern Match mit:
 
  | Bezeichnung | HiDA4 Feldnummer | Beispiel | Kommentar |
  | --- | --- | ---| --- |
@@ -39,9 +40,10 @@ Das hier zu entwickelnde "Künstlerdokumenttool" soll zwei der wichtigsten Eigen
  
 
 ## 2. VG Bild-Kunst Vertretung
-2. Ermittel alle Künstlerdokumente ohne VG-Bild-Kunst Eintrag.
+2. Ermittel alle Künstlerdokumente ohne VG-Bild-Kunst Eintrag. (Feld 3189: gemeinfrei)
 3. Erstelle ein namens(varianten-) basiertes Matching mittels der entsprechenden CSV-Datei zu Künstlern mit Onlinerechten über http://www.bildkunst.de/service/kuenstlersuche/onlinerechte.html
-3a. unter Ausschlusskriterium: gemeinfreie Künstler (Sterbedatum <x)
+3.a. unter Ausschlusskriterium: gemeinfreie Künstler (Sterbedatum <x); 
+3.b. Problem: VG-Bild hat keine Lebensdaten. Ein maschineller Match kann zu falschen Ergebnissen führen.
 4. Erstelle automatisch bei einem exacten Match einen "VG-Bild-Kunst vertreten" Eintrag in das entsprechende Feld.
 5. Generiere eine Liste aller übrig gebliebenen Künstler für ein manuelles Matching.
 
